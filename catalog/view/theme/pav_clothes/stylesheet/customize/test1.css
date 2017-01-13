@@ -1,0 +1,37 @@
+
+/* customize for body */ 
+
+/* customize for topbar */ 
+#topbar { background-color:#b10303} 
+#topbar ul li a { color:#000000} 
+#topbar ul li a:hover { color:#474047} 
+
+/* customize for pav-mainnav */ 
+#header-main { background-color:#c50303} 
+#header-main a { color:#ffffff} 
+#header-main .navbar-inverse .navbar ul.nav li:hover { background-color:#a5aeb6} 
+
+/* customize for footer-top */ 
+.footer-top { background-color:#cfcdd4} 
+
+/* customize for footer-center */ 
+.footer-center { background-color:#cfcdd4} 
+.footer-center { color:#ffffff} 
+.footer-center a { color:#ffffff} 
+
+/* customize for powered */ 
+#powered { background-color:#5a5a5a} 
+#powered a { color:#b10303} 
+
+/* customize for product */ 
+.product-block .group-item .cart { background-color:#c50303} 
+.product-block .group-item .cart:hover { background-color:#595959} 
+.wishlist-compare a { color:#595959} 
+.wishlist-compare a:hover { background-color:#d4d2d4} 
+
+/* customize for modules */ 
+.sidebar .box .box-heading { background-color:#585858} 
+
+/* customize for highlight-modules */ 
+.sidebar .box.highlight .box-heading { background-color:#585858} 
+ul.tree &gt; li &gt; a.active { border-left-color:#c50303} 

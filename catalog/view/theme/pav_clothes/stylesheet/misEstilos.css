@@ -1,0 +1,108 @@
+.social-blocks .block {
+    width: 25%;
+    float: left;
+    text-align: center;
+    display: block;
+    padding: 30px 0;
+    color: #FFF;
+    font-size: 1.2rem;
+}
+
+.social-blocks .block--yellow {
+    background-color: #fcb017;
+}
+
+.social-blocks .block--orange {
+    background-color: #f45500;
+}
+
+.social-blocks .block--blue {
+    background-color: #1abdd4;
+}
+
+.social-blocks .block--purple {
+    background-color: #1e1933;
+}
+
+.list-title {
+    color: #000;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.input-group {
+    display: table;
+    border-collapse: separate;
+}
+
+
+#powered {
+  background: white;
+}
+#powered .inner {
+  padding: 30px 0 60px;
+  background: white;
+  overflow: hidden;
+}
+#powered .copyright {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #000;
+  margin: 3rem 0 0;
+}
+.rtl #powered .copyright {
+  text-align: center;
+}
+#powered a {
+  color: #c3c3c3;
+}
+
+.explorarTodo {
+    width: 100%;
+    float: left;
+    text-align: center;
+    display: block;
+    padding: 85px  0;
+    color: #FFF;
+    font-size: 1.6em;
+    background-color: #201A3E;
+}
+.explorarTodo a{
+    color: #c3c3c3;
+}
+
+
+
+.cart-actions {
+    z-index: 30;
+    position: relative;
+    display: block;
+    float: right;
+    width: 120px;
+    height: 120px;
+    background-color: #1abdd4;
+    color: #fff;
+    text-align: center;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+}
+
+#header-main {
+  background-color: #fff;
+  min-height: 67px;
+border:1px solid #fff;
+}
+
+
+
+
+
+
+
+
