@@ -1,353 +1,375 @@
-<?php 
-/******************************************************
- * @package Pav Opencart Theme Framework for Opencart 1.5.x
- * @version 1.1
- * @author http://www.pavothemes.com
- * @copyright	Copyright (C) Augus 2013 PavoThemes.com <@emai:pavothemes@gmail.com>.All rights reserved.
- * @license		GNU General Public License version 2
-*******************************************************/
 
- 
-	$themeConfig = $this->config->get( 'themecontrol' );
-	$themeName =  $this->config->get('config_template');
-	require_once( DIR_TEMPLATE.$this->config->get('config_template')."/development/libs/framework.php" );
-	$helper = ThemeControlHelper::getInstance( $this->registry, $themeName );
-	$helper->setDirection( $direction );
-	/* Add scripts files */
-	$helper->addScript( 'catalog/view/javascript/jquery/jquery-1.7.1.min.js' );
-	$helper->addScript( 'catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js' );
-	$helper->addScript( 'catalog/view/javascript/jquery/ui/external/jquery.cookie.js' );
-	$helper->addScript( 'catalog/view/javascript/common.js' );
-	$helper->addScript( 'catalog/view/theme/'.$themeName.'/javascript/common.js' );
-	$helper->addScript( 'catalog/view/javascript/jquery/bootstrap/bootstrap.min.js' );
-	
-	$helper->addScriptList( $scripts );
-	
-	$helper->addCss( 'catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css' );	
-	if( isset($themeConfig['customize_theme']) 
-		&& file_exists(DIR_TEMPLATE.$themeName.'/stylesheet/customize/'.$themeConfig['customize_theme'].'.css') ) {  
-		$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/customize/'.$themeConfig['customize_theme'].'.css'  );
-	}
-
-	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/animation.css' );	
-	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/font-awesome.min.css' );	
-	$helper->addCssList( $styles );
- 	$keepHeader = isset($themeConfig['header'])?$themeConfig['header']:"";
- 	$layoutMode = $helper->getParam( 'layout' );
- 	
-?>
 <!DOCTYPE html>
-<html dir="<?php echo $helper->getDirection(); ?>" class="<?php echo $helper->getDirection(); ?>" lang="<?php echo $lang; ?>">
+<html lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+
 <head>
-<!-- Mobile viewport optimized: h5bp.com/viewport -->
-<meta name="viewport" content="width=device-width">
-<meta charset="UTF-8" />
-<title><?php echo $title; ?></title>
-<base href="<?php echo $base; ?>" />
-<?php if ($description) { ?>
-<meta name="description" content="<?php echo $description; ?>" />
-<?php } ?>
-<?php if ($keywords) { ?>
-<meta name="keywords" content="<?php echo $keywords; ?>" />
-<?php } ?>
-<?php if ($icon) { ?>
-<link href="<?php echo $icon; ?>" rel="icon" />
-<?php } ?>
-<?php foreach ($links as $link) { ?>
-<link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
-<?php } ?>
-<?php foreach ($helper->getCssLinks() as $link) { ?>
-<link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
-<?php } ?>
-	<?php if( $themeConfig['theme_width'] &&  $themeConfig['theme_width'] != 'auto' ) { ?>
-			<style> #page-container .container{max-width:<?php echo $themeConfig['theme_width'];?>; width:auto}</style>
-	<?php } ?>
-	
-	<?php if( isset($themeConfig['use_custombg']) && $themeConfig['use_custombg'] ) {	?>
-	<style> 
-		body{
-			background:url( "image/<?php echo $themeConfig['bg_image'];?>") <?php echo $themeConfig['bg_repeat'];?>  <?php echo $themeConfig['bg_position'];?> !important;
-		}</style>
-	<?php } ?>
-<?php 
-	if( isset($themeConfig['enable_customfont']) && $themeConfig['enable_customfont'] ){
-	$css=array();
-	$link = array();
-	for( $i=1; $i<=3; $i++ ){
-		if( trim($themeConfig['google_url'.$i]) && $themeConfig['type_fonts'.$i] == 'google' ){
-			$link[] = '<link rel="stylesheet" type="text/css" href="'.trim($themeConfig['google_url'.$i]) .'"/>';
-			$themeConfig['normal_fonts'.$i] = $themeConfig['google_family'.$i];
-		}
-		if( trim($themeConfig['body_selector'.$i]) && trim($themeConfig['normal_fonts'.$i]) ){
-			$css[]= trim($themeConfig['body_selector'.$i])." {font-family:".str_replace("'",'"',htmlspecialchars_decode(trim($themeConfig['normal_fonts'.$i])))."}\r\n"	;
-		}
-	}
-	echo implode( "\r\n",$link );
-?>
-<style>
-	<?php echo implode("\r\n",$css);?>
-</style>
-<?php } else { ?>
 
-<?php if (isset($_SERVER['HTTPS']) && (($_SERVER['HTTPS'] == 'on') || ($_SERVER['HTTPS'] == '1'))) { ?>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,300italic,400italic,500italic,700italic,900italic,100italic,100' rel='stylesheet' type='text/css'>
-<?php } else { ?>
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,300italic,400italic,500italic,700italic,900italic,100italic,100' rel='stylesheet' type='text/css'>
-<?php } ?>
 
-<?php } ?>
-<?php foreach( $helper->getScriptFiles() as $script )  { ?>
-<script type="text/javascript" src="<?php echo $script; ?>"></script>
-<?php } ?>
-<?php if( isset($themeConfig['enable_paneltool']) && $themeConfig['enable_paneltool'] ){  ?>
-<link  href="catalog/view/theme/<?php echo $themeName;?>/stylesheet/paneltool.css" rel="stylesheet"/>
-<script type="text/javascript" src="catalog/view/javascript/jquery/colorpicker/js/colorpicker.js"></script>
-<link  href="catalog/view/javascript/jquery/colorpicker/css/colorpicker.css" rel="stylesheet" />
-<?php } ?>
-<?php if( isset($themeConfig['custom_javascript'])  && !empty($themeConfig['custom_javascript']) ){ ?>
-	<script type="text/javascript"><!--
-		$(document).ready(function() {
-			<?php echo html_entity_decode(trim( $themeConfig['custom_javascript']) ); ?>
-		});
-//--></script>
-<?php }	?>
-<link rel="stylesheet" type="text/css" href="catalog/view/theme/pav_clothes/stylesheet/misEstilos.css">
+  <title>GU Energy</title>
 
-<!--[if lt IE 9]>
-<?php if( isset($themeConfig['load_live_html5'])  && $themeConfig['load_live_html5'] ) { ?>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<?php } else { ?>
-<script src="catalog/view/javascript/html5.js"></script>
-<?php } ?>
-<script src="catalog/view/javascript/respond.min.js"></script>
-<link rel="stylesheet" type="text/css" href="catalog/view/theme/<?php echo $themeName;?>/stylesheet/ie8.css" />
-<![endif]-->
+<link rel="stylesheet" id='application-css' type="text/css" href="catalog/view/theme/pav_clothes/stylesheet/misEstilos.min.css" media="all">
 
-<?php if ( isset($stores) && $stores ) { ?>
-<script type="text/javascript"><!--
-$(document).ready(function() {
-<?php foreach ($stores as $store) { ?>
-$('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></iframe>');
-<?php } ?>
-});
-//--></script>
-<?php } ?>
-<?php echo $google_analytics; ?>
+
+<link rel='stylesheet' id='application-css'  href='https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/css/application.min-864cbfa611.css?ver=4.7.1' type='text/css' media='all' />
+
+
+
+
+
+
+<script type='text/javascript' src='https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/js/vendor.min-289ae76e00.js?ver=4.7.1'></script>
+
+
+  
+
+    
 </head>
-<body id="offcanvas-container" class="offcanvas-container layout-<?php echo $layoutMode; ?> <?php echo $keepHeader; ?> fs<?php echo $themeConfig['fontsize'];?> <?php echo $helper->getPageClass();?> <?php echo $helper->getParam('body_pattern','');?> lang-<?php echo $lang; ?>">
-<section id="page" class="offcanvas-pusher" role="main">
-<section id="header">
-		<section id="topbar" class="topbar clearfix">
-			<div class="container">
-					
-					
-
-				<div class="show-mobile hidden-lg hidden-md pull-right">
-					<div class="quick-user pull-left">
-							
-						<div class="inner-toggle">
-							<div class="login links">
-								<?php if (!$logged) { ?>
-								<?php echo $text_welcome; ?>
-								<?php } else { ?>
-								<?php echo $text_logged; ?>
-								<?php } ?> 
-							</div>
-						</div>						
-					</div>
-					<div class="quick-access pull-left">
-						<div class="quickaccess-toggle">
-							<i class="fa fa-list"></i>															
-						</div>	
-						<div class="inner-toggle">
-							<ul class="links pull-left">
-								<!-- <li><a class="first" href="<?php echo $home; ?>"><?php echo $text_home; ?></a></li> -->
-								
-								<li><a class="wishlist" href="<?php echo $wishlist; ?>" id="mobile-wishlist-total"><span class="fa fa-heart"></span><?php echo $text_wishlist; ?></a></li>
-								
-								<li><a class="shoppingcart" href="<?php echo $shopping_cart; ?>"><span class="fa fa-shopping-cart"></span><?php echo $text_shopping_cart; ?></a></li>
-								<li><a class="last checkout" href="<?php echo $checkout; ?>"><span class="fa fa-file"></span><?php echo $text_checkout; ?></a></li>
-								<li><a class="account" href="<?php echo $account; ?>"><span class="fa fa-user"></span><?php echo $text_account; ?></a></li>						 		
-							</ul>
-						</div>						
-					</div>
-					<div id="search_mobile" class="search pull-left">				
-						<div class="quickaccess-toggle">
-							<i class="fa fa-search"></i>								
-						</div>																								
-						<div class="inner-toggle">						
-							<div id="search-mobile" class="btn">
-								<input type="text" name="search1" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" />
-								<span class="button-search"></span>
-							</div>
-						</div>
-					</div>
-					<div class="support pull-left">
-						<div class="quickaccess-toggle">
-							<i class="fa fa-sun-o"></i>								
-						</div>						
-						<div class="inner-toggle">
-							<div id="mobile-currency" class="currency pull-left">
-								<?php echo $currency; ?>
-							</div> 
-							<div id="mobile-language" class="language pull-left">
-								<?php echo $language; ?>
-							</div>
-						</div>														
-					</div>			
-				</div>
-
-			</div>
-		</section>
-		<section id="header-main">
-			<div class="container">
-				<div class="header-wrap">
-					<div class="pull-left inner">
-						<div class="pull-left inner">
-							<?php if ($logo) { ?>
-							<div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
-							<?php } ?>
-						</div>
-						<div class="pull-right inner">
-							<section id="pav-mainnav">
-								<div class="container">
-							 		<div class="navbar navbar-inverse "> 
-
-											<?php 
-											/**
-											 * Main Menu modules: as default if do not put megamenu, the theme will use categories menu for main menu
-											 */
-											$modules = $helper->getModulesByPosition( 'megamenu' ); 
-											if( count($modules) && !empty($modules) ){ 
-
-											?>
-
-												<?php foreach ($modules as $module) { ?>
-													<?php echo $module; ?>
-
-												<?php } ?>
-
-											<?php } elseif ($categories) {  ?>
-													<div class="navbar-header">
-														<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-														<span class="sr-only">Toggle navigation</span>
-														<span class="icon-bar"></span>
-														<span class="icon-bar"></span>
-														<span class="icon-bar"></span>
-														</button>
-													</div>
-
-											  <div class="collapse navbar-collapse navbar-ex1-collapse">
-														  <ul class="nav navbar-nav">
-														  	<li class="parent dropdown deeper ">
-														  		<a href="?<?php echo $categories[0]['href']; ?>" class="dropdown-toggle" data-toggle="dropdown">
-														  			SHOP
-																	<b class="caret"></b>
-
-																</a>
-																<?php foreach ($categories as $category) { ?>
-																	
-																	<?php if ($category['children']) { ?>
-																	  	<ul class="dropdown-menu">
-
-																	 	<a href="<?php echo $category['href']; ?>">
-																	 	 	<?php echo $category['name']; ?>
-																	  	</a>
-
-																		<?php for ($i = 0; $i < count($category['children']);) { ?>
-																		
-																		  <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
-																		  <?php for (; $i < $j; $i++) { ?>
-																		  <?php if (isset($category['children'][$i])) { ?>
-																		  <li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
-																		  <?php } ?>
-																		  <?php } ?>
-																		
-																		<?php } ?>
-																	</ul>
-																	  <?php } ?>
-																				
-																				
-																			<?php } ?>
-
-															</li>
-
-															<li class="parent dropdown deeper ">
-														  		<a href="?route=pavblog/blogs" class="dropdown-toggle" data-toggle="dropdown">
-														  			PLAN
-																	<b class="caret"></b>
-
-																</a>
-															</li>
-
-															<li class="parent dropdown deeper ">
-														  		<a href="?route=pavblog/blogs" class="dropdown-toggle" data-toggle="dropdown">
-														  			LEARN
-																	<b class="caret"></b>
-																</a>
-															</li>
-
-													
 
 
 
-														
-														<li>
-															<div>
-																<?php if (!$logged) { ?>
-																	<?php echo $text_welcome; ?>
-																<?php } else { ?>
-																	<?php echo $text_logged; ?>
-																<?php } ?> 
-															</div>
-														</li>
-
-														<li>
-															<div>
-																<div id="search" class="btn pull-left hidden-sm hidden-xs">
-																	<input type="text" name="search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" />
-																	<span class="button-search"></span>
-																</div>
-																												
-															</div>
-														</li>
-													  </ul>
-												</div>	   
-											
-											<?php } ?>
-									</div>
-								</div>		
-							</section>
-						</div>					
-					</div>
-					<div class="cart-actions">
-						<a href="<?php echo $shopping_cart;?>">
-							<img src="https://guenergy.com/wp-content/themes/guenergy-17/assets/images/cart-icon.svg">
-						</a>
-						
-							
-					</div>
-
-			</div>
-		</section>
-</section>
+<body>
 
 
 
-
-
-<?php if( isset($themeConfig['enable_offsidebars']) && $themeConfig['enable_offsidebars'] ) { ?>
-<section id="columns" class="offcanvas-siderbars"><div class="container">
-<div class="row visible-xs">
-	<div class="container"> 
-		<div class="offcanvas-sidebars-buttons">
-			<button type="button" data-for="column-left" class="pull-left btn btn-danger"><i class="glyphicon glyphicon-indent-left"></i> <?php echo $this->language->get('text_sidebar_left'); ?></button>
-			
-			<button type="button" data-for="column-right" class="pull-right btn btn-danger"><?php echo $this->language->get('text_sidebar_right'); ?> <i class="glyphicon glyphicon-indent-right"></i></button>
-		</div>
-	</div>
+<div id="preloader">
+  <div class="spinner">
+    
+  </div>
 </div>
-<?php }else { ?>
-<section id="columns"><div class="">
-<?php } ?>
-<div class="row">
+
+  
+
+  <div class="body"> 
+
+<header id="header" role="header">
+      
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="nav-wrapper">
+
+        <button class="js-toggle-nav hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <a href="index.php?route=common/home" class="logo"></a>
+
+        <a href="<?php echo $shopping_cart; ?>">
+            <div class="cart-actions">
+                <img src="https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/assets/images/cart-icon.svg" />
+            </div>
+        </a>
+        
+
+        <ul class="account-controlls nav-link-style">
+            <li class=""><a class="" href="index.php?route=account/login">Iniciar sesión</a></li>
+            <li class=""><a class="" href="index.php?route=account/register">Crear cuenta</a></li>
+            <li class="search js-toggle-search"><i class="fa fa-search" aria-hidden="true"></i></li>
+        </ul>
+
+        <ul class="main-nav nav-link-style nav-link-style--bold" id="AccessibleNav">
+
+            <li class="main-nav--has-dropdown">
+              <a class="site-nav__link site-nav__link__dropdown" href="https://shop.guenergy.com/collections/all" data-target="shop-drop">
+                TIENDA
+              </a>
+            </li>
+
+            <li class="main-nav--has-dropdown">
+              <a class="site-nav__link site-nav__link__dropdown" href="/nutrition-plan/" data-target="plan-drop">
+                PLAN
+              </a>
+            </li>
+
+            <li class="main-nav--has-dropdown">
+              <a class="site-nav__link site-nav__link__dropdown" href="?route=pavblog/blogs" data-target="lab-drop">
+                APRENDER    
+              </a>
+            </li>
+
+            <li >
+              <a  href="/distribuidores" data-target="shop-drop">
+                DISTRIBUIDORES
+              </a>
+            </li>
+
+
+            <li class="main-nav--has-dropdown -mobile-only">
+              <a class="site-nav__link -half" href="https://shop.guenergy.com/account/register" >
+                Account
+              </a>
+              <a class="site-nav__link -half" href="https://shop.guenergy.com/account/login">
+                Login
+              </a>
+            </li>
+            <li class="main-nav--has-dropdown -mobile-only">
+                <div class="search-form -mobile">
+                    <form action="/" method="get">
+                        <input class="search-text" type="text" name="s" id="search" value="" placeholder="search..."/>
+                        <input class="btn" type="submit" value="GO" />
+                    </form>
+                </div><!-- search form -->
+            </li>
+
+        </ul><!-- main nav -->
+
+
+        <div class="main-nav__dropdown" id="shop-drop">
+          <div class="container-fluid">
+
+            <div class="row">
+                <span class="js-nav-go-back nav-go-back btn -btn-gray mb0" >Back</span>
+            </div><!-- / row -->
+
+            <div class="nav-list__wrapper">
+              <div class="row">
+
+                <div class="col-xs-6 col-sm-3">
+                    <ul class="nav-list">
+                        <li><h5><a href="/activity/">Activity</a></h5></li>
+                        <li><a class="site-nav__link" href="/intensity/">Intensity</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/0-2-hours-low/">0-2 Hours Low</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/0-2-hours-high/">0-2 Hours High</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/2-hours/">2+ Hours </a></li>
+                        <li><a class="site-nav__link" href="/sport/">Sports</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/running/">Running</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/triathalon/">Triathlon</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/cycling/">Cycling</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/mtb/">MTB</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/crossfit/">Crossfit</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/field-sports/">Field Sports</a></li>
+
+
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-sm-3">
+                    <ul class="nav-list">
+                        <li><h5><a href="/form/">Form</a></h5></li>
+                        <li><a class="site-nav__link" href="/form/gel/">Gels</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/collections/energy/products/energy-gel">Original</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/collections/energy/products/roctane-energy-gel">Roctane</a></li>
+                        <li><a class="site-nav__link" href="https://shop.guenergy.com/products/energy-chews">Chews</a></li>
+                        <li><a class="site-nav__link" href="/form/drink/">Drinks</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/hydration-drink-tabs">Tabs</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/hydration-drink-mix">Mix</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/recovery-drink-mix">Recovery</a></li>
+                        <li><a class="site-nav__link" href="https://shop.guenergy.com/collections/energy/products/gu-energy-stroopwafel">Stroopwafel</a></li>
+                        <li><a class="site-nav__link" href="/form/capsules/">Capsules</a></li>
+                        <li><a class="site-nav__link" href="/form/gear/">Gear</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-sm-3">
+                    <ul class="nav-list">
+                        <li><h5><a href="/diet/">Diet</a></h5></li>
+                        <li><a class="site-nav__link" href="/diet/caffeine/">Caffeine</a></li>
+                        <li><a class="site-nav__link" href="/diet/caffeine-free/">Caffeine Free</a></li>
+                        <li><a class="site-nav__link" href="/diet/kosher/">Kosher</a></li>
+                        <li><a class="site-nav__link" href="/diet/vegan/">Vegan</a></li>
+                        <li><a class="site-nav__link" href="/diet/gluten-free/">Gluten Free</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-sm-3">
+                    <ul class="nav-list">
+                        <li><h5><a href="/collections/">Category</a></h5></li>
+                        <li><a class="site-nav__link" href="/collections/energy/">Energy</a></li>
+                        <li><a class="site-nav__link" href="/collections/hydration/">Hydration</a></li>
+                        <li><a class="site-nav__link" href="/collections/recovery/">Recovery</a></li>
+                    </ul>
+                </div>
+
+              </div><!-- / row -->
+            </div><!-- / end nav list wrapper -->
+
+            <div class="row">
+                <a class="btn -btn-gray mb0" href="/form/">View All</a>
+            </div><!-- / row -->
+
+          </div>
+        </div><!-- drop 1 -->
+
+        <div class="main-nav__dropdown" id="plan-drop">
+          <div class="container-fluid">
+
+            <div class="row">
+                <span class="js-nav-go-back nav-go-back btn -btn-gray mb0" >Back</span>
+            </div><!-- / row -->
+
+              <div class="row">
+
+                <div class="image-nav">
+
+                    <div class="image-nav-wrapper">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="/nutrition-plan/activity/running/">
+                                    <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/nav-1.jpg');"></div>
+                                    <h5 class="title">Running</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="image-nav-wrapper">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="/nutrition-plan/activity/cycling/">
+                                    <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/cycling-nav.jpg');"></div>
+                                    <h5 class="title">Cycling</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="image-nav-wrapper">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="/nutrition-plan/activity/triathalon/">
+                                    <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/triathlon-nav.jpg');"></div>
+                                    <h5 class="title">Triathlon</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="image-nav-wrapper">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="/nutrition-plan/activity/mtb/">
+                                    <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/nav-4.jpg');"></div>
+                                    <h5 class="title">MTB</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="image-nav-wrapper">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="/nutrition-plan/activity/intensity/">
+                                    <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/basic-nav.jpg');"></div>
+                                    <h5 class="title">Basic</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="clear"></div>
+                </div> <!-- / image nav -->
+            </div>
+          </div>
+        </div><!-- drop 2 -->
+
+        <div class="main-nav__dropdown" id="lab-drop">
+          <div class="container-fluid">
+
+              <div class="row">
+                <span class="js-nav-go-back nav-go-back btn -btn-gray mb0" >Back</span>
+              </div><!-- / row -->
+
+              <div class="row">
+                <div class="image-nav">
+
+                    <div class="image-nav-wrapper">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="/about/">
+                                    <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/our-story-nav.jpg');"></div>
+                                    <h5 class="title">OUR STORY</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="image-nav-wrapper">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="/category/product-deep-dive/">
+                                    <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/product-insights-nav.jpg');"></div>
+                                    <h5 class="title">PRODUCT DEEP DIVE</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="image-nav-wrapper">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="/category/athlete-stories/">
+                                    <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/athlete-stories-nav.jpg');"></div>
+                                    <h5 class="title">ATHLETE STORIES</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="image-nav-wrapper">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="/category/lab-notes/">
+                                    <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/lab-notes-nav.jpg');"></div>
+                                    <h5 class="title">LAB NOTES</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="image-nav-wrapper">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="/category/nutrition-tips/">
+                                    <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/nutrition-tip-nav.jpg');"></div>
+                                    <h5 class="title">NUTRITION TIPS</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="clear"></div>
+                </div> <!-- / image nav -->
+              </div>
+
+              <div class="row">
+                <ul class="aux-nav">
+                    <li><a href="/about/">GU For It</a></li>
+                    <li><a href="/athletes/">Athletes</a></li>
+                    <li><a href="/events/">Events</a></li>
+                    <li><a href="/glossary/">Glossary</a></li>
+                </ul>
+              </div><!-- / row -->
+
+          </div>
+        </div> <!-- drop 3 -->
+    </div>
+    <div class="search-form -desktop">
+        <form action="index.php?route=product/search&search" method="get">
+            <i class="fa fa-times js-toggle-search" aria-hidden="true"></i>
+            <input class="search-text" type="text" name="search" id="search" value="" placeholder="search..."/>
+            <input class="btn" type="submit" value="GO" />
+        </form>
+    </div><!-- search form -->
+  </div>
+</nav>    
+</header>
+   
+
+
+
+</div><!-- .body -->
+
+   
+    <script type='text/javascript' src='https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/plugins/beautiful-taxonomy-filters/public/js/select2/select2.full.min.js?ver=2.1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var btf_localization = {"ajaxurl":"https:\/\/guenergy.com\/wp-admin\/admin-ajax.php","min_search":"8","allow_clear":"","show_description":"","disable_select2":"","conditional_dropdowns":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/plugins/beautiful-taxonomy-filters/public/js/beautiful-taxonomy-filters-public.min.js?ver=2.1.0'></script>
+<script type='text/javascript' src='https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/js/application.js?ver=4.7.1'></script>
+<script type='text/javascript' src='https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-includes/js/wp-embed.min.js?ver=4.7.1'></script>
+
+</body>
+</html>
