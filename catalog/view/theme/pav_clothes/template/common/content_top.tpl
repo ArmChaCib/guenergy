@@ -40,7 +40,7 @@
       <div class="col-sm-4">
         <div class="product-slider-wrapper">
 
-          <h4 class="title tac">Featured</h4>
+          <h4 class="title tac">Destacado</h4>
           <div class="product-slider -homepage-slider js-product-slider slick-initialized slick-slider"><button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button>
           
 <div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 2110px; transform: translate3d(-422px, 0px, 0px);"><div class="product slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 422px;">
@@ -128,7 +128,7 @@
 
                   <div class="copy">
                     
-                        <h1 class="title">Running</h1>
+                        <h1 class="title">Correr</h1>
                       
                   </div>
               </div>
@@ -142,7 +142,7 @@
 
                   <div class="copy">
                     
-                        <h5 class="title">Cycling</h5>
+                        <h5 class="title">Ciclismo</h5>
                       
                   </div>
               </div>
@@ -156,7 +156,7 @@
 
                   <div class="copy">
                     
-                        <h5 class="title">Triathalon</h5>
+                        <h5 class="title">Triatlón</h5>
                       
                   </div>
               </div>
@@ -184,7 +184,7 @@
 
                   <div class="copy">
                     
-                        <h5 class="title">Intensity</h5>
+                        <h5 class="title">Crossfit</h5>
                       
                   </div>
               </div>
