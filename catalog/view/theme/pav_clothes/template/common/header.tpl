@@ -132,7 +132,7 @@
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/0-2-hours-low/">0-2 Horas Ligero</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/0-2-hours-high/">0-2 Horas Intenso</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/2-hours/">+ 2 Horas</a></li>
-                        <li><a class="site-nav__link" href="/sport/">Sports</a></li>
+                        <li><a class="site-nav__link" href="/sport/">Deportes</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/running/">Correr</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/triathalon/">Triatlon</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/cycling/">Ciclismo</a></li>
@@ -156,7 +156,7 @@
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/hydration-drink-mix">Mix</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/recovery-drink-mix">Recuperación</a></li>
                         <li><a class="site-nav__link" href="https://shop.guenergy.com/collections/energy/products/gu-energy-stroopwafel">Stroopwafel</a></li>
-                        <li><a class="site-nav__link" href="/form/capsules/">Cápsuls</a></li>
+                        <li><a class="site-nav__link" href="/form/capsules/">Cápsulas</a></li>
                   
                     </ul>
                 </div>
