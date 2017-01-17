@@ -11,7 +11,7 @@
 
 
 <link rel='stylesheet' id='application-css'  href='https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/css/application.min-864cbfa611.css?ver=4.7.1' type='text/css' media='all' />
-
+<link rel="shortcut icon" type="image/png" href="https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/favicon.ico">
 
 
 
