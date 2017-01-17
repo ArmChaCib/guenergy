@@ -5,7 +5,7 @@
 <head>
 
 
-  <title>GU Energy</title>
+  <title>GU Energy México</title>
 
 <link rel="stylesheet" id='application-css' type="text/css" href="catalog/view/theme/pav_clothes/stylesheet/misEstilos.min.css" media="all">
 
@@ -97,10 +97,10 @@
 
             <li class="main-nav--has-dropdown -mobile-only">
               <a class="site-nav__link -half" href="https://shop.guenergy.com/account/register" >
-                Account
+                Cuenta
               </a>
               <a class="site-nav__link -half" href="https://shop.guenergy.com/account/login">
-                Login
+                Ingresar
               </a>
             </li>
             <li class="main-nav--has-dropdown -mobile-only">
@@ -119,7 +119,7 @@
           <div class="container-fluid">
 
             <div class="row">
-                <span class="js-nav-go-back nav-go-back btn -btn-gray mb0" >Back</span>
+                <span class="js-nav-go-back nav-go-back btn -btn-gray mb0" >Atrás</span>
             </div><!-- / row -->
 
             <div class="nav-list__wrapper">
@@ -127,18 +127,18 @@
 
                 <div class="col-xs-6 col-sm-3">
                     <ul class="nav-list">
-                        <li><h5><a href="/activity/">Activity</a></h5></li>
-                        <li><a class="site-nav__link" href="/intensity/">Intensity</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/0-2-hours-low/">0-2 Hours Low</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/0-2-hours-high/">0-2 Hours High</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/2-hours/">2+ Hours </a></li>
+                        <li><h5><a href="/activity/">Actividad</a></h5></li>
+                        <li><a class="site-nav__link" href="/intensity/">Intensidad</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/0-2-hours-low/">0-2 Horas Ligero</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/0-2-hours-high/">0-2 Horas Intenso</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/2-hours/">+ 2 Horas</a></li>
                         <li><a class="site-nav__link" href="/sport/">Sports</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/running/">Running</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/triathalon/">Triathlon</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/cycling/">Cycling</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/running/">Correr</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/triathalon/">Triatlon</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/cycling/">Ciclismo</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/mtb/">MTB</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/crossfit/">Crossfit</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/field-sports/">Field Sports</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/field-sports/">Deportes de equipo</a></li>
 
 
                     </ul>
@@ -146,38 +146,38 @@
 
                 <div class="col-xs-6 col-sm-3">
                     <ul class="nav-list">
-                        <li><h5><a href="/form/">Form</a></h5></li>
-                        <li><a class="site-nav__link" href="/form/gel/">Gels</a></li>
+                        <li><h5><a href="/form/">Presentación</a></h5></li>
+                        <li><a class="site-nav__link" href="/form/gel/">Gel</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/collections/energy/products/energy-gel">Original</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/collections/energy/products/roctane-energy-gel">Roctane</a></li>
-                        <li><a class="site-nav__link" href="https://shop.guenergy.com/products/energy-chews">Chews</a></li>
-                        <li><a class="site-nav__link" href="/form/drink/">Drinks</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/hydration-drink-tabs">Tabs</a></li>
+                        <li><a class="site-nav__link" href="https://shop.guenergy.com/products/energy-chews">Gomas</a></li>
+                        <li><a class="site-nav__link" href="/form/drink/">Bebidas</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/hydration-drink-tabs">Tabletas</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/hydration-drink-mix">Mix</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/recovery-drink-mix">Recovery</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/recovery-drink-mix">Recuperación</a></li>
                         <li><a class="site-nav__link" href="https://shop.guenergy.com/collections/energy/products/gu-energy-stroopwafel">Stroopwafel</a></li>
-                        <li><a class="site-nav__link" href="/form/capsules/">Capsules</a></li>
-                        <li><a class="site-nav__link" href="/form/gear/">Gear</a></li>
+                        <li><a class="site-nav__link" href="/form/capsules/">Cápsuls</a></li>
+                  
                     </ul>
                 </div>
 
                 <div class="col-xs-6 col-sm-3">
                     <ul class="nav-list">
-                        <li><h5><a href="/diet/">Diet</a></h5></li>
-                        <li><a class="site-nav__link" href="/diet/caffeine/">Caffeine</a></li>
-                        <li><a class="site-nav__link" href="/diet/caffeine-free/">Caffeine Free</a></li>
+                        <li><h5><a href="/diet/">Dieta</a></h5></li>
+                        <li><a class="site-nav__link" href="/diet/caffeine/">Cafeina</a></li>
+                        <li><a class="site-nav__link" href="/diet/caffeine-free/">Sin Cafeína</a></li>
                         <li><a class="site-nav__link" href="/diet/kosher/">Kosher</a></li>
-                        <li><a class="site-nav__link" href="/diet/vegan/">Vegan</a></li>
-                        <li><a class="site-nav__link" href="/diet/gluten-free/">Gluten Free</a></li>
+                        <li><a class="site-nav__link" href="/diet/vegan/">Vegano</a></li>
+                        <li><a class="site-nav__link" href="/diet/gluten-free/">Libre de Gluten</a></li>
                     </ul>
                 </div>
 
                 <div class="col-xs-6 col-sm-3">
                     <ul class="nav-list">
-                        <li><h5><a href="/collections/">Category</a></h5></li>
-                        <li><a class="site-nav__link" href="/collections/energy/">Energy</a></li>
-                        <li><a class="site-nav__link" href="/collections/hydration/">Hydration</a></li>
-                        <li><a class="site-nav__link" href="/collections/recovery/">Recovery</a></li>
+                        <li><h5><a href="/collections/">Categoría</a></h5></li>
+                        <li><a class="site-nav__link" href="/collections/energy/">Energía</a></li>
+                        <li><a class="site-nav__link" href="/collections/hydration/">Hidración</a></li>
+                        <li><a class="site-nav__link" href="/collections/recovery/">Recuperación</a></li>
                     </ul>
                 </div>
 
@@ -185,7 +185,7 @@
             </div><!-- / end nav list wrapper -->
 
             <div class="row">
-                <a class="btn -btn-gray mb0" href="/form/">View All</a>
+                <a class="btn -btn-gray mb0" href="/form/">Ver Todo</a>
             </div><!-- / row -->
 
           </div>
@@ -195,7 +195,7 @@
           <div class="container-fluid">
 
             <div class="row">
-                <span class="js-nav-go-back nav-go-back btn -btn-gray mb0" >Back</span>
+                <span class="js-nav-go-back nav-go-back btn -btn-gray mb0" >Atrás</span>
             </div><!-- / row -->
 
               <div class="row">
@@ -218,7 +218,7 @@
                             <li>
                                 <a href="/nutrition-plan/activity/cycling/">
                                     <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/cycling-nav.jpg');"></div>
-                                    <h5 class="title">Cycling</h5>
+                                    <h5 class="title">Ciclismo</h5>
                                 </a>
                             </li>
                         </ul>
@@ -229,7 +229,7 @@
                             <li>
                                 <a href="/nutrition-plan/activity/triathalon/">
                                     <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/triathlon-nav.jpg');"></div>
-                                    <h5 class="title">Triathlon</h5>
+                                    <h5 class="title">Triatlón</h5>
                                 </a>
                             </li>
                         </ul>
@@ -267,7 +267,7 @@
           <div class="container-fluid">
 
               <div class="row">
-                <span class="js-nav-go-back nav-go-back btn -btn-gray mb0" >Back</span>
+                <span class="js-nav-go-back nav-go-back btn -btn-gray mb0" >Atrás</span>
               </div><!-- / row -->
 
               <div class="row">
@@ -278,7 +278,7 @@
                             <li>
                                 <a href="/about/">
                                     <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/our-story-nav.jpg');"></div>
-                                    <h5 class="title">OUR STORY</h5>
+                                    <h5 class="title">Nuestra historia</h5>
                                 </a>
                             </li>
                         </ul>
@@ -300,7 +300,7 @@
                             <li>
                                 <a href="/category/athlete-stories/">
                                     <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/athlete-stories-nav.jpg');"></div>
-                                    <h5 class="title">ATHLETE STORIES</h5>
+                                    <h5 class="title">ATLETAS</h5>
                                 </a>
                             </li>
                         </ul>
