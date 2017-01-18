@@ -127,12 +127,12 @@
 
                 <div class="col-xs-6 col-sm-3">
                     <ul class="nav-list">
-                        <li><h5><a href="/activity/">Actividad</a></h5></li>
-                        <li><a class="site-nav__link" href="/intensity/">Intensidad</a></li>
+                        <li><h5><a href="?route=information/activity">Actividad</a></h5></li>
+                        <li><a class="site-nav__link" href="?route=information/intensity">Intensidad</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/0-2-hours-low/">0-2 Horas Ligero</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/0-2-hours-high/">0-2 Horas Intenso</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/2-hours/">+ 2 Horas</a></li>
-                        <li><a class="site-nav__link" href="/sport/">Deportes</a></li>
+                        <li><a class="site-nav__link" href="?route=information/sports">Deportes</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/running/">Correr</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/triathalon/">Triatlon</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/cycling/">Ciclismo</a></li>
@@ -146,7 +146,7 @@
 
                 <div class="col-xs-6 col-sm-3">
                     <ul class="nav-list">
-                        <li><h5><a href="/form/">Presentación</a></h5></li>
+                        <li><h5><a href="?route=information/form">Presentación</a></h5></li>
                         <li><a class="site-nav__link" href="/form/gel/">Gel</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/collections/energy/products/energy-gel">Original</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/collections/energy/products/roctane-energy-gel">Roctane</a></li>
@@ -163,7 +163,7 @@
 
                 <div class="col-xs-6 col-sm-3">
                     <ul class="nav-list">
-                        <li><h5><a href="/diet/">Dieta</a></h5></li>
+                        <li><h5><a href="?route=information/diet">Dieta</a></h5></li>
                         <li><a class="site-nav__link" href="/diet/caffeine/">Cafeina</a></li>
                         <li><a class="site-nav__link" href="/diet/caffeine-free/">Sin Cafeína</a></li>
                         <li><a class="site-nav__link" href="/diet/kosher/">Kosher</a></li>
@@ -174,7 +174,7 @@
 
                 <div class="col-xs-6 col-sm-3">
                     <ul class="nav-list">
-                        <li><h5><a href="/collections/">Categoría</a></h5></li>
+                        <li><h5><a href="?route=information/category">Categoría</a></h5></li>
                         <li><a class="site-nav__link" href="/collections/energy/">Energía</a></li>
                         <li><a class="site-nav__link" href="/collections/hydration/">Hidración</a></li>
                         <li><a class="site-nav__link" href="/collections/recovery/">Recuperación</a></li>
