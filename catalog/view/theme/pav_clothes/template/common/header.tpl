@@ -136,7 +136,7 @@
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/running/">Correr</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/triathalon/">Triatlon</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/cycling/">Ciclismo</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/mtb/">MTB</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/index.php?route=information/information&information_id=7">MTB</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/index.php?route=product/category&path=72">Crossfit</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/activity/field-sports/">Deportes de equipo</a></li>
 
