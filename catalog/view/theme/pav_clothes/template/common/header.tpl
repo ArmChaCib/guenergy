@@ -305,7 +305,7 @@
                             </li>
                         </ul>
                     </div>
-
+                    <!-- / image nav 
                     <div class="image-nav-wrapper">
                         <ul class="nav-list">
                             <li>
@@ -327,7 +327,7 @@
                             </li>
                         </ul>
                     </div>
-
+                    -->
                     <div class="clear"></div>
                 </div> <!-- / image nav -->
               </div>
