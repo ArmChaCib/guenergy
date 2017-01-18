@@ -103,39 +103,39 @@
 	</div>
 	<div class="post-copy-wraper">
 		<h4 class="post-title"><a href="https://guenergy.com/about/">
-			The GU Story</a></h4>
+			La historia de GU</a></h4>
 				<p class="post-copy">Our Why Through training, we grow stronger, get faster, and learn how to endure more. By eating the right nutrients, ...</p>
 	</div>
 
-	<a href="https://guenergy.com/about/" class="read-more">Learn More</a>
+	<a href="https://guenergy.com/about/" class="read-more">Leer más</a>
 
 </div><!-- / post item -->
 </div><div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4"><div class="post-item">
 	<div class="post-img-wrap mb1">
 		<a href="https://guenergy.com/join-the-brigade/">
-			<img width="322" height="225" src="https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/uploads/2015/04/GU-arrow-image-v2-us-322x225.jpg" class="attachment-post-img size-post-img wp-post-image" alt="" />		</a>
+			<img width="322" height="225" src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.0-9/13230170_811161109018290_4466684696806000938_n.jpg?oh=b757ecbbdf4746c2c87a5784022508e3&oe=59147890" class="attachment-post-img size-post-img wp-post-image" alt="" />		</a>
 	</div>
 	<div class="post-copy-wraper">
 		<h4 class="post-title"><a href="https://guenergy.com/join-the-brigade/">
-			Join the Brigade</a></h4>
+			Carrera Chase The Yeti 2017</a></h4>
 				<p class="post-copy">There is nothing more deflating than seeing spent gel packets on the road or trail during a run or ride. ...</p>
 	</div>
 
-	<a href="https://guenergy.com/join-the-brigade/" class="read-more">Learn More</a>
+	<a href="https://guenergy.com/join-the-brigade/" class="read-more">Leer más</a>
 
 </div><!-- / post item -->
 </div><div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4"><div class="post-item">
 	<div class="post-img-wrap mb1">
 		<a href="https://guenergy.com/50-miles-in-marin-a-passion-for-running-and-nutrition/">
-			<img width="322" height="225" src="https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/uploads/2015/12/NorthFACE_eMAIL.640by340px.FINAL_.web_-322x225.png" class="attachment-post-img size-post-img wp-post-image" alt="" />		</a>
+			<img width="322" height="225" src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.0-9/13230170_811161109018290_4466684696806000938_n.jpg?oh=b757ecbbdf4746c2c87a5784022508e3&oe=59147890" class="attachment-post-img size-post-img wp-post-image" alt="" />		</a>
 	</div>
 	<div class="post-copy-wraper">
 		<h4 class="post-title"><a href="https://guenergy.com/50-miles-in-marin-a-passion-for-running-and-nutrition/">
-			50 Miles in Marin: A Passion for Running ...</a></h4>
+			Carrera Chase The Yeti 2018</a></h4>
 				<p class="post-copy">“My Passion for endurance sports plays a tremendous role in my success as an athlete, but also it raises the ...</p>
 	</div>
 
-	<a href="https://guenergy.com/50-miles-in-marin-a-passion-for-running-and-nutrition/" class="read-more">Learn More</a>
+	<a href="https://guenergy.com/50-miles-in-marin-a-passion-for-running-and-nutrition/" class="read-more">Leer más</a>
 
 </div><!-- / post item -->
 </div>
