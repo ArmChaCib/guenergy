@@ -1,6 +1,6 @@
 
 <div class="social-blocks">
-  <a href="https://www.facebook.com/GUEnergyLabs" target="_blank">
+  <a href="https://www.facebook.com/GUEnergyMexico" target="_blank">
     <div class="block block--yellow"><i class="fa fa-facebook" aria-hidden="true"></i></div>
   </a>
 
@@ -12,7 +12,7 @@
     <div class="block block--blue"><i class="fa fa-twitter" aria-hidden="true"></i></div>
   </a>
 
-  <a href="https://www.instagram.com/guenergylabs/" target="_blank">
+  <a href="https://www.instagram.com/guenergymexico/" target="_blank">
     <div class="block block--purple"><i class="fa fa-instagram" aria-hidden="true"></i></div>
   </a>
   <div class="clear"></div>
@@ -32,7 +32,7 @@
                             <li><a href="/contact-us/">Contacto</a></li>
                             <li><a href="/shipping-policy/">Envío y devoluciones</a></li>
                             <li><a href="/privacy-policy/">Política de privacidad</a></li>
-                            <li><a href="/international-dealers/">Internacional</a></li>
+                            
                         </ul>
                     </div><!-- /col -->
 
@@ -55,7 +55,7 @@
                     </div><!-- /col -->
 
                     <div class="col-sm-3 col-xs-6">
-                        <h2 class="list-title">Be In The Know</h2>
+                        <h2 class="list-title">Newsletter</h2>
                         <p> Regístrate para las últimas noticias, ofertas, y promociones.</p>
                         <form action="//guenergy.us1.list-manage.com/subscribe/post?u=79de68ec067b344df3ec71ac7&amp;id=dee15c813a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" class="form-vertical">
                               <div class="input-group">
@@ -74,7 +74,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <p class="copyright mb4">
-                    Copyright &copy; 2017 GU Energy Labs. Sitio por <a href="https://oneclick.com" target="_blank">ONECLICK</a>.
+                    Copyright &copy; 2017 GU Energy México. Sitio desarrollado por <a href="https://oneclick.com.mx" target="_blank">OneClick</a>.
                 </p>
             </div><!-- /col -->
         </div><!-- /row -->

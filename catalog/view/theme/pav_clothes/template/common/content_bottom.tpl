@@ -48,7 +48,7 @@
 					<div class="gradient-bg gradient--purple js-mousemove">
 						<div class="mouse-hex"></div>
 						<div class="copy">
-							<h4 class="title">Stroopwafel</h4>
+							<h4 class="title">Hydratation Drink Mix</h4>
 							<h6 class="subtitle">Now in four flavors</h6>
 						</div>
 					</div>
@@ -60,7 +60,7 @@
 					<div class="gradient-bg gradient--orange js-mousemove">
 						<div class="mouse-hex"></div>
 						<div class="copy">
-							<h4 class="title">Energy Chews</h4>
+							<h4 class="title">Roctane Energy Gel</h4>
 							<h6 class="subtitle">New Packaging</h6>
 						</div>
 					</div>
@@ -88,8 +88,8 @@
 
 	<section class="section">
 		<div class="gu-heading gu-heading--white">
-			<h4 class="subtitle">Our Story</h4>
-			<h2 class="title">The Journal<span class="index-number">03</span><span class="hex-grid"></span></h2>
+			<h4 class="subtitle">Nuestra historia</h4>
+			<h2 class="title">El Diario<span class="index-number">03</span><span class="hex-grid"></span></h2>
 		</div>
 	</section>
 
