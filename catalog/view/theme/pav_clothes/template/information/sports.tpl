@@ -64,7 +64,7 @@
 
 					<div class="gu-heading">
 						<h2 class="title animation animated fadeInUp" data-animation="fadeInUp">
-							Triathlon							
+							Triatlón							
 							<span class="index-number animation animated fadeInDown" data-animation="fadeInDown">
 								02
 							</span>
@@ -94,7 +94,7 @@
 
 					<div class="gu-heading">
 						<h2 class="title animation animated fadeInUp" data-animation="fadeInUp">
-							Cycling							
+							Ciclismo						
 							<span class="index-number animation animated fadeInDown" data-animation="fadeInDown">
 								03
 							</span>
