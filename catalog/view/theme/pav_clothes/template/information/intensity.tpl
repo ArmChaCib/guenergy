@@ -36,7 +36,7 @@
 
 					<div class="gu-heading">
 						<h2 class="title animation animated fadeInUp" data-animation="fadeInUp">
-							2+ Hours							
+							+ 2 Horas							
 							<span class="index-number animation animated fadeInDown" data-animation="fadeInDown">
 								01
 							</span>
@@ -52,7 +52,7 @@
 			<a class="overlay-link" href="https://guenergy.com/activity/2-hours/"></a>
 
 			<a class="btn -clear" href="https://guenergy.com/activity/2-hours/">
-				View All 2+ Hours
+				Ver todo  + 2 Horas
 			</a>
 
 		</li> 
@@ -65,7 +65,7 @@
 
 				<div class="gu-heading">
 					<h2 class="title animation animated fadeInUp" data-animation="fadeInUp">
-						0 - 2 Hours High							
+						0 - 2 Horas Intenso							
 						<span class="index-number animation animated fadeInDown" data-animation="fadeInDown">02</span>
 						<span class="hex-grid animation animated bounceIn" data-animation="bounceIn"></span>
 					</h2>
@@ -77,7 +77,7 @@
 			<a class="overlay-link" href="https://guenergy.com/activity/0-2-hours-high/"></a>
 
 			<a class="btn -clear" href="https://guenergy.com/activity/0-2-hours-high/">
-				View All 0 - 2 Hours High
+				Ver todo 0 - 2 Horas Intenso
 			</a>
 
 		</li> 
@@ -89,7 +89,7 @@
 
 				<div class="gu-heading">
 					<h2 class="title animation animated fadeInUp" data-animation="fadeInUp">
-						0 - 2 Hours Low							
+						0 - 2 Horas Ligero							
 						<span class="index-number animation animated fadeInDown" data-animation="fadeInDown">
 							03
 						</span>
@@ -103,7 +103,7 @@
 			<a class="overlay-link" href="https://guenergy.com/activity/0-2-hours-low/"></a>
 
 			<a class="btn -clear" href="https://guenergy.com/activity/0-2-hours-low/">
-				View All 0 - 2 Hours Low
+				Ver todo 0 - 2 Horas Ligero
 			</a>
 
 		</li> 

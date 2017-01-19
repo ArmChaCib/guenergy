@@ -62,7 +62,7 @@
 			<a class="overlay-link" href="https://guenergy.com/form/gel/"></a>
 
 			<a class="btn -clear" href="https://guenergy.com/form/gel/">
-				View All Gel
+				Ver todos los Geles
 			</a>
 
 			<ul class="term-child-nav">
@@ -106,13 +106,13 @@
 			<a class="overlay-link" href="https://guenergy.com/form/drink/"></a>
 
 			<a class="btn -clear" href="https://guenergy.com/form/drink/">
-				View All Drink
+				Ver todas las bebidas
 			</a>
 
 			<ul class="term-child-nav">
 				<li>
 					<a href="https://guenergy.com/form/tab/">
-						Tab
+						Tabletas
 					</a>
 				</li>
 
@@ -124,7 +124,7 @@
 
 				<li>
 					<a href="https://guenergy.com/form/recovery/">
-						Recovery
+						Recuperación
 					</a>
 				</li>
 			</ul>	
@@ -154,7 +154,7 @@
 			<a class="overlay-link" href="https://guenergy.com/form/chews/"></a>
 
 			<a class="btn -clear" href="https://guenergy.com/form/chews/">
-					View All Chews
+					Ver todas las gomitas
 			</a>
 
 			</li> 
@@ -182,7 +182,7 @@
 				<a class="overlay-link" href="https://guenergy.com/form/wafel/"></a>
 
 				<a class="btn -clear" href="https://guenergy.com/form/wafel/">
-					View All Waffel
+					Ver todos los waffel Waffel
 				</a>
 
 			</li> 
@@ -210,37 +210,12 @@
 				<a class="overlay-link" href="https://guenergy.com/form/capsules/"></a>
 
 				<a class="btn -clear" href="https://guenergy.com/form/capsules/">
-					View All Capsules
+					Ver todas las Cápsulas
 				</a>
 
 			</li> 
 
-			<li class="term-section" id="sectionid-gear" style="background-image : url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/uploads/2016/12/Stubbs_Gu_Winter2016-248-1680x920.jpg');">
-				<div class="copy">
-
-					<i class="product-icon tmbricons tmbricons-gear"></i>
-
-					<div class="gu-heading">
-						<h2 class="title animation animated fadeInUp" data-animation="fadeInUp">
-							Gear							
-							<span class="index-number animation animated fadeInDown" data-animation="fadeInDown">
-								06
-							</span>
-							<span class="hex-grid animation animated bounceIn" data-animation="bounceIn">
-								
-							</span>
-						</h2>
-					</div>
-						
-					<p>
-						Gear for those that #GuforIt to keep you fueled, comfortable, and looking good.
-					</p>
-				</div>
-				<a class="overlay-link" href="https://guenergy.com/form/gear/"></a>
-
-				<a class="btn -clear" href="https://guenergy.com/form/gear/">View All Gear</a>
-
-			</li> 
+			 
 		
 		</ul>
 

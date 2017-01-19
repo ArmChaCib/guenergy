@@ -113,7 +113,7 @@
 
 				<li>
 					<a href="https://guenergy.com/activity/field-sports/">
-						Field Sports
+						Deportes en equipo
 					</a>
 				</li>
 
@@ -134,7 +134,7 @@
 					<i class="product-icon tmbricons tmbricons-intensity"></i>
 
 					<div class="gu-heading">
-						<h2 class="title animation animated fadeInUp" data-animation="fadeInUp">Intensity	
+						<h2 class="title animation animated fadeInUp" data-animation="fadeInUp">Intensidad	
 
 							<span class="index-number animation animated fadeInDown" data-animation="fadeInDown">
 								03
@@ -151,24 +151,24 @@
 
 				<a class="overlay-link" href="/intensity/"></a>
 
-				<a class="btn -clear" href="/intensity/">View All Intensity</a>
+				<a class="btn -clear" href="/intensity/">Ver todo lo de Intensidad</a>
 
 				<ul class="term-child-nav">
 					<li>
 						<a href="https://guenergy.com/activity/0-2-hours-low/">
-							0 - 2 Hours Low
+							0 - 2 Horas Ligero
 						</a>
 					</li>
 
 					<li>
 						<a href="https://guenergy.com/activity/0-2-hours-high/">
-							0 - 2 Hours High
+							0 - 2 Horas Intenso
 						</a>
 					</li>
 
 					<li>
 						<a href="https://guenergy.com/activity/2-hours/">
-							2+ Hours
+							+ 2 Horas
 						</a>
 					</li>
 				</ul>			

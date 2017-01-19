@@ -15,7 +15,7 @@
 			
 
 			<span style="font-weight: 400;"> 
-				Browse nutrition based on activity type.
+				Busca tu nutrición basado en el tipo de actividad.
 			</span>
 		</p>
 
@@ -36,7 +36,7 @@
 
 					<div class="gu-heading">
 						<h2 class="title animation animated fadeInUp" data-animation="fadeInUp">
-							Running							
+							Correr						
 							<span class="index-number animation animated fadeInDown" data-animation="fadeInDown">
 								01
 							</span>
@@ -52,7 +52,7 @@
 			<a class="overlay-link" href="https://guenergy.com/activity/running/"></a>
 
 			<a class="btn -clear" href="https://guenergy.com/activity/running/">
-				View All Running
+				Ver todo Correr
 			</a>
 
 		</li> 
@@ -81,7 +81,7 @@
 			<a class="overlay-link" href="https://guenergy.com/activity/triathalon/"></a>
 
 			<a class="btn -clear" href="https://guenergy.com/activity/triathalon/">
-				View All Triathlon
+				Ver todo Triatlón
 			</a>
 
 		</li> 
@@ -110,7 +110,7 @@
 			<a class="overlay-link" href="https://guenergy.com/activity/cycling/"></a>
 
 			<a class="btn -clear" href="https://guenergy.com/activity/cycling/">
-				View All Cycling
+				Ver todo Ciclismo
 			</a>
 
 		</li> 
@@ -141,7 +141,7 @@
 			<a class="overlay-link" href="https://guenergy.com/activity/mtb/"></a>
 
 			<a class="btn -clear" href="https://guenergy.com/activity/mtb/">
-				View All MTB
+				Ver todo MTB
 			</a>
 
 		</li> 
@@ -182,7 +182,7 @@
 
 				<div class="gu-heading">
 					<h2 class="title animation animated fadeInUp" data-animation="fadeInUp">
-						Field Sports							
+						Deportes en equipo							
 						<span class="index-number animation animated fadeInDown" data-animation="fadeInDown">
 							06
 						</span>
@@ -198,7 +198,7 @@
 			<a class="overlay-link" href="https://guenergy.com/activity/field-sports/"></a>
 
 			<a class="btn -clear" href="https://guenergy.com/activity/field-sports/">
-				View All Field Sports
+				Ver todo de deportes en equipo
 			</a>
 
 		</li> 
