@@ -54,7 +54,7 @@
 			<a class="overlay-link" href="https://guenergy.com/collections/energy/"></a>
 
 			<a class="btn -clear" href="https://guenergy.com/collections/energy/">
-				View All Energy
+				Ver todo de Energía
 			</a>
 
 		</li> 
@@ -83,7 +83,7 @@
 			<a class="overlay-link" href="https://guenergy.com/collections/hydration/"></a>
 
 			<a class="btn -clear" href="https://guenergy.com/collections/hydration/">
-				View All Hydration
+				Ver todfo de  Hidratación
 			</a>
 
 		</li>
@@ -111,7 +111,7 @@
 			<a class="overlay-link" href="https://guenergy.com/collections/recovery/"></a>
 
 			<a class="btn -clear" href="https://guenergy.com/collections/recovery/">
-				View All Recovery
+				Ver todo de Recuperación
 			</a>
 
 		</li> 

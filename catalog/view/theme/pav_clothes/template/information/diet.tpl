@@ -35,7 +35,7 @@
 
 					<div class="gu-heading">
 						<h2 class="title animation animated fadeInUp" data-animation="fadeInUp">
-							Caffeine Free						
+							Sin Cafeína						
 							<span class="index-number animation animated fadeInDown" data-animation="fadeInDown">
 								01
 							</span>
@@ -52,7 +52,7 @@
 				<a class="overlay-link" href="https://guenergy.com/diet/caffeine-free/"></a>
 
 				<a class="btn -clear" href="https://guenergy.com/diet/caffeine-free/">
-					View All Caffeine Free
+					Ver todo lo de sin cafeína
 				</a>
 
 			</li> 
@@ -64,7 +64,7 @@
 
 					<div class="gu-heading">
 						<h2 class="title animation animated fadeInUp" data-animation="fadeInUp">
-							Caffeine							
+							Cafeína							
 							<span class="index-number animation animated fadeInDown" data-animation="fadeInDown">
 								02
 							</span>
@@ -80,7 +80,7 @@
 				<a class="overlay-link" href="https://guenergy.com/diet/caffeine/"></a>
 
 				<a class="btn -clear" href="https://guenergy.com/diet/caffeine/">
-					View All Caffeine
+					Ver todo lo de Cafeína
 				</a>
 
 				<ul class="term-child-nav">
@@ -111,7 +111,7 @@
 
 					<div class="gu-heading">
 						<h2 class="title animation animated fadeInUp" data-animation="fadeInUp">
-							Gluten Free							
+							Libre de Gluten							
 							<span class="index-number animation animated fadeInDown" data-animation="fadeInDown">
 								03
 							</span>
@@ -128,7 +128,7 @@
 				<a class="overlay-link" href="https://guenergy.com/diet/gluten-free/"></a>
 
 				<a class="btn -clear" href="https://guenergy.com/diet/gluten-free/">
-					View All Gluten Free
+					Ver todo lo libre de Gluten
 				</a>
 
 			</li> 
@@ -157,7 +157,7 @@
 				<a class="overlay-link" href="https://guenergy.com/diet/kosher/"></a>
 
 				<a class="btn -clear" href="https://guenergy.com/diet/kosher/">
-					View All Kosher
+					Ver todo lo Kosher
 				</a>
 
 			</li> 
@@ -169,7 +169,7 @@
 
 					<div class="gu-heading">
 						<h2 class="title animation animated fadeInUp" data-animation="fadeInUp">
-							Vegan							
+							Vegano							
 							<span class="index-number animation animated fadeInDown" data-animation="fadeInDown">
 								05
 							</span>
@@ -181,7 +181,7 @@
 				<a class="overlay-link" href="https://guenergy.com/diet/vegan/"></a>
 
 				<a class="btn -clear" href="https://guenergy.com/diet/vegan/">
-					View All Vegan
+					Ver todo lo Vegano
 				</a>
 
 			</li> 
