@@ -20,11 +20,7 @@
 ?>
 <?php echo $header; ?>
  
-<?php if( $SPAN[0] ): ?>
-	<aside class="col-lg-<?php echo $SPAN[0];?> col-md-<?php echo $SPAN[0];?> col-sm-12 col-xs-12">
-		<?php echo $column_left; ?>
-	</aside>	
-<?php endif; ?> 
+
 <section class="col-lg-<?php echo $SPAN[1];?> col-md-<?php echo $SPAN[1];?> col-sm-12 col-xs-12">
 <?php require( DIR_TEMPLATE.$this->config->get('config_template')."/template/common/breadcrumb.tpl" );  ?>	
 <div id="content">
@@ -189,7 +185,7 @@
     <div class="right"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a></div>
   </div>
   <?php } ?>
-  <?php echo $content_bottom; ?></div>
+
 <script type="text/javascript"><!--
 function display(view) {
 	if (view == 'list') {
@@ -243,10 +239,10 @@ $(document).ready(function() {
 <?php } ?>
 </section> 
 
-<?php if( $SPAN[2] ): ?>
-	<aside class="col-lg-<?php echo $SPAN[2];?> col-md-<?php echo $SPAN[2];?> col-sm-12 col-xs-12">	
-		<?php echo $column_right; ?>
-	</aside>
-<?php endif; ?>
+
  
 <?php echo $footer; ?>
+
+
+
+
