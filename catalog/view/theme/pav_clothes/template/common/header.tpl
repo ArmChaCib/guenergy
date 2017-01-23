@@ -125,16 +125,16 @@
                     <ul class="nav-list">
                         <li><h5><a href="?route=information/activity">Actividad</a></h5></li>
                         <li><a class="site-nav__link" href="?route=information/intensity">Intensidad</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/0-2-hours-low/">0-2 Horas Ligero</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/0-2-hours-high/">0-2 Horas Intenso</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/2-hours/">+ 2 Horas</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/index.php?route=product/category&path=65">0-2 Horas Ligero</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/index.php?route=product/category&path=66">0-2 Horas Intenso</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/index.php?route=product/category&path=67">+ 2 Horas</a></li>
                         <li><a class="site-nav__link" href="?route=information/sports">Deportes</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/running/">Correr</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/triathalon/">Triatlon</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/cycling/">Ciclismo</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/index.php?route=information/information&information_id=7">MTB</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/index.php?route=product/category&path=68">Correr</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/index.php?route=product/category&path=69">Triatlon</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/index.php?route=product/category&path=70">Ciclismo</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/index.php?route=product/category&path=71">MTB</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="/index.php?route=product/category&path=72">Crossfit</a></li>
-                        <li><a class="site-nav__link site-nav__link__sub" href="/activity/field-sports/">Deportes de equipo</a></li>
+                        <li><a class="site-nav__link site-nav__link__sub" href="/index.php?route=product/category&path=73">Deportes de equipo</a></li>
 
 
                     </ul>
