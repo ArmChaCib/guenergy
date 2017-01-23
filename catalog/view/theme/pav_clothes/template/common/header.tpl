@@ -7,14 +7,10 @@
 
   <title>GU Energy México</title>
 
-<link rel="stylesheet" id='application-css' type="text/css" href="catalog/view/theme/pav_clothes/stylesheet/misEstilos.min.css" media="all">
+<link rel="stylesheet" id='application-css' type="text/css" href="catalog/view/theme/pav_clothes/stylesheet/misEstilos.css" media="all">
 
 
-<link rel='stylesheet' id='application-css'  href='https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/css/application.min-864cbfa611.css?ver=4.7.1' type='text/css' media='all' />
-<link rel="shortcut icon" type="image/png" href="https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/favicon.ico">
-
-
-
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 
 <script type='text/javascript' src='https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/js/vendor.min-289ae76e00.js?ver=4.7.1'></script>
