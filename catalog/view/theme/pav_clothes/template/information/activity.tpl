@@ -82,9 +82,9 @@
 
 			</div>
 
-			<a class="overlay-link" href="/sport/"></a>
+			<a class="overlay-link" href="/index.php?route=information/sports"></a>
 
-			<a class="btn -clear" href="/sport/">Ver todos los deportes</a>
+			<a class="btn -clear" href="/index.php?route=information/sports">Ver todos los deportes</a>
 
 			<ul class="term-child-nav">
 				<li>
@@ -149,25 +149,25 @@
 					<p>Nutrition for Every Effort Level</p>
 				</div>
 
-				<a class="overlay-link" href="/intensity/"></a>
+				<a class="overlay-link" href="/index.php?route=information/intensity"></a>
 
-				<a class="btn -clear" href="/intensity/">Ver todo lo de Intensidad</a>
+				<a class="btn -clear" href="/index.php?route=information/intensity">Ver todo lo de Intensidad</a>
 
 				<ul class="term-child-nav">
 					<li>
-						<a href="https://guenergy.com/activity/0-2-hours-low/">
+						<a href="/index.php?route=product/category&amp;path=65">
 							0 - 2 Horas Ligero
 						</a>
 					</li>
 
 					<li>
-						<a href="https://guenergy.com/activity/0-2-hours-high/">
+						<a href="/index.php?route=product/category&amp;path=66">
 							0 - 2 Horas Intenso
 						</a>
 					</li>
 
 					<li>
-						<a href="https://guenergy.com/activity/2-hours/">
+						<a href="/index.php?route=product/category&amp;path=67">
 							+ 2 Horas
 						</a>
 					</li>
