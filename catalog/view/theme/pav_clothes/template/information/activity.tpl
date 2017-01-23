@@ -88,37 +88,37 @@
 
 			<ul class="term-child-nav">
 				<li>
-					<a href="https://guenergy.com/activity/running/">
+					<a href="/index.php?route=product/category&amp;path=68">
 						Correr
 					</a>
 				</li>
 
 				<li>
-					<a href="https://guenergy.com/activity/cycling/">
+					<a href="/index.php?route=product/category&amp;path=70">
 						Ciclismo
 					</a>
 				</li>
 
 				<li>
-					<a href="https://guenergy.com/activity/triathalon/">
+					<a href="/index.php?route=product/category&amp;path=69">
 						Triatlón
 					</a>
 				</li>
 
 				<li>
-					<a href="https://guenergy.com/activity/mtb/">
+					<a href="/index.php?route=product/category&amp;path=71">
 						MTB
 					</a>
 				</li>
 
 				<li>
-					<a href="https://guenergy.com/activity/field-sports/">
+					<a href="/index.php?route=product/category&amp;path=73">
 						Deportes en equipo
 					</a>
 				</li>
 
 				<li>
-					<a href="https://guenergy.com/activity/crossfit/">
+					<a href="/index.php?route=product/category&amp;path=72">
 						Crossfit
 					</a>
 				</li>
