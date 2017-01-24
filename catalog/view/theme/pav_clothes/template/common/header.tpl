@@ -143,11 +143,11 @@
                 <div class="col-xs-6 col-sm-3">
                     <ul class="nav-list">
                         <li><h5><a href="?route=information/form">Presentación</a></h5></li>
-                        <li><a class="site-nav__link" href="/form/gel/">Gel</a></li>
+                        <li><a class="site-nav__link" href="/index.php?route=product/category&path=75">Gel</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/collections/energy/products/energy-gel">Original</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/collections/energy/products/roctane-energy-gel">Roctane</a></li>
                         <li><a class="site-nav__link" href="https://shop.guenergy.com/products/energy-chews">Gomas</a></li>
-                        <li><a class="site-nav__link" href="/form/drink/">Bebidas</a></li>
+                        <li><a class="site-nav__link" href="/index.php?route=product/category&path=2">Bebidas</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/hydration-drink-tabs">Tabletas</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/hydration-drink-mix">Mix</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/recovery-drink-mix">Recuperación</a></li>
