@@ -49,9 +49,9 @@
 						Nutrition for endurance activity when sustaining energy, replacing electrolytes and preventing muscle damage is critical to performance.
 					</p>
 			</div>
-			<a class="overlay-link" href="https://guenergy.com/activity/2-hours/"></a>
+			<a class="overlay-link" href="/index.php?route=product/category&amp;path=67"></a>
 
-			<a class="btn -clear" href="https://guenergy.com/activity/2-hours/">
+			<a class="btn -clear" href="/index.php?route=product/category&amp;path=67">
 				Ver todo  + 2 Horas
 			</a>
 
@@ -74,9 +74,9 @@
 					Energy and key nutrients for vigorous activity that can rapidly exhaust your body and lead to stomach distress.
 				</p>
 			</div>
-			<a class="overlay-link" href="https://guenergy.com/activity/0-2-hours-high/"></a>
+			<a class="overlay-link" href="/index.php?route=product/category&amp;path=66"></a>
 
-			<a class="btn -clear" href="https://guenergy.com/activity/0-2-hours-high/">
+			<a class="btn -clear" href="/index.php?route=product/category&amp;path=66">
 				Ver todo 0 - 2 Horas Intenso
 			</a>
 
@@ -100,9 +100,9 @@
 					Nutrition for low intensity activity that is less draining and may be easier on your digestion.
 				</p>
 			</div>
-			<a class="overlay-link" href="https://guenergy.com/activity/0-2-hours-low/"></a>
+			<a class="overlay-link" href="/index.php?route=product/category&amp;path=65"></a>
 
-			<a class="btn -clear" href="https://guenergy.com/activity/0-2-hours-low/">
+			<a class="btn -clear" href="/index.php?route=product/category&amp;path=65">
 				Ver todo 0 - 2 Horas Ligero
 			</a>
 
