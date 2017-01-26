@@ -15,7 +15,7 @@
 			
 
 			<span style="font-weight: 400;"> 
-				Browse nutrition based on activity duration and intensity.
+				Nutrición dependiendo de la actividad, duración e intensidad.
 			</span>
 		</p>
 
@@ -46,7 +46,7 @@
 						</h2>
 					</div>
 					<p>
-						Nutrition for endurance activity when sustaining energy, replacing electrolytes and preventing muscle damage is critical to performance.
+						Nutrición para actividades demandantes (endurance). Cuando mantener la energía, reponer electrolitos y prevenir el daño muscular son críticos para tu desempeño (performance).
 					</p>
 			</div>
 			<a class="overlay-link" href="/index.php?route=product/category&amp;path=67"></a>
@@ -71,7 +71,7 @@
 					</h2>
 				</div>
 				<p>
-					Energy and key nutrients for vigorous activity that can rapidly exhaust your body and lead to stomach distress.
+					Energía y nutrientes clave para actividades demandantes que pueden dejar tu cuerpo exhausto y con males estomacales.
 				</p>
 			</div>
 			<a class="overlay-link" href="/index.php?route=product/category&amp;path=66"></a>
@@ -97,7 +97,7 @@
 					</h2>
 				</div>
 				<p>
-					Nutrition for low intensity activity that is less draining and may be easier on your digestion.
+					Nutrición para actividades de baja intensidad y son menos desgastantes  para tu cuerpo. 
 				</p>
 			</div>
 			<a class="overlay-link" href="/index.php?route=product/category&amp;path=65"></a>
