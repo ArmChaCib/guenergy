@@ -147,7 +147,7 @@
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/collections/energy/products/energy-gel">Original</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/collections/energy/products/roctane-energy-gel">Roctane</a></li>
                         <li><a class="site-nav__link" href="https://shop.guenergy.com/products/energy-chews">Gomas</a></li>
-                        <li><a class="site-nav__link" href="/index.php?route=product/category&path=2">Bebidas</a></li>
+                        <li><a class="site-nav__link" href="/index.php?route=product/category&path=79">Bebidas</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/hydration-drink-tabs">Tabletas</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/hydration-drink-mix">Mix</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/recovery-drink-mix">Recuperación</a></li>
