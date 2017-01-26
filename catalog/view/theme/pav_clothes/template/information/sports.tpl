@@ -15,7 +15,7 @@
 			
 
 			<span style="font-weight: 400;"> 
-				Busca tu nutrición basado en el tipo de actividad.
+				Nutrición basado en el tipo de actividad.
 			</span>
 		</p>
 
@@ -46,7 +46,7 @@
 						</h2>
 					</div>
 					<p>
-						Nutrition that’s easy to eat and digest while running to keep you in stride and your blood flowing to your muscles not your stomach.
+						Nutrición que es fácil de ingerir y digerir mientras corres para mantenerte en movimiento y con tu sangre circulando hacia tus músculos y no hacia tu estómago.
 					</p>
 			</div>
 			<a class="overlay-link" href="/index.php?route=product/category&amp;path=68"></a>
@@ -75,7 +75,7 @@
 					</div>
 					
 					<p>
-						The right mix of products for easy consumption and absorption across all three disciplines for immediate and sustained energy and focus.
+						 La correcta combinación de productos de fácil consumo y absorción a lo largo de las tres disciplinas para obtener energía inmediata y de larga duración y también concentración.
 					</p>
 			</div>
 			<a class="overlay-link" href="/index.php?route=product/category&amp;path=69"></a>
@@ -104,7 +104,7 @@
 						</h2>
 					</div>
 					<p>
-						Key nutrition for life in the saddle, designed for easy one-handed consumption and fast absorption to maintain leg strength and power.
+						Nutrición clave  para permanecer en el asiento de tu bicicleta, diseñados para disponer de ella con una sola mano y de rápida absorción para mantener la fuerza y el poder en tus piernas.
 					</p>
 			</div>
 			<a class="overlay-link" href="/index.php?route=product/category&amp;path=70"></a>
@@ -133,7 +133,7 @@
 						</h2>
 				</div>
 				<p>
-					The right nutrients for a day on the trail with long deplenishing grinds, short breaks for recovery and the need to remain mentally focused.
+					La nutrición correcta para un día  en los “trails” con largas jornadas de pedaleo y cortos periodos de recuperación y la necesidad de mantenerte mentalmente enfocado.
 				</p>
 
 			</div>
@@ -163,7 +163,7 @@
 						</h2>
 					</div>
 					<p>
-						Energy and key nutrients for high intensity workouts with short recovery periods that rapidly exhaust your body, cause muscle damage and can lead to stomach distress.
+						Nutrientes clave de energía y nutrición para entrenamientos de alta intensidad con periodos muy cortos de recuperación que te agotan rápidamente, causan desgaste muscular y te pueden llevar rápidamente al malestar estomacal.
 					</p>
 			</div>
 			<a class="overlay-link" href="/index.php?route=product/category&amp;path=72"></a>
@@ -192,7 +192,7 @@
 					</h2>
 				</div>
 				<p>
-					A mix of nutrition for brief periods of sustained activity where cramping could end a would-be game winning fast break and for quick replenishment is essential during short breaks and post-game recovery. 
+					Mezcla de nutrientes para periodos cortos de actividad sostenida donde los calambres pueden acabar con el posible triunfo de un partido y donde la rápida reposición es esencial durante cortos descansos y la recuperación post-partido es vital. 
 				</p>
 			</div>
 			<a class="overlay-link" href="/index.php?route=product/category&amp;path=73"></a>

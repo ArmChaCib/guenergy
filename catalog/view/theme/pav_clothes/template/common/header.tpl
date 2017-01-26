@@ -152,7 +152,7 @@
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/hydration-drink-mix">Mix</a></li>
                         <li><a class="site-nav__link site-nav__link__sub" href="https://shop.guenergy.com/products/recovery-drink-mix">Recuperación</a></li>
                         <li><a class="site-nav__link" href="https://shop.guenergy.com/collections/energy/products/gu-energy-stroopwafel">Stroopwafel</a></li>
-                        <li><a class="site-nav__link" href="/form/capsules/">Cápsulas</a></li>
+                        <li><a class="site-nav__link" href="/index.php?route=product/category&path=84">Cápsulas</a></li>
                   
                     </ul>
                 </div>
