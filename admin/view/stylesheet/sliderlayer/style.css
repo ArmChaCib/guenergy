@@ -299,3 +299,7 @@ td .buttons .btn{ padding:5px 12px; font-weight: normal; margin:0;}
 .slider-delete{left: auto;right:36px;background: url(delete.gif) no-repeat center center }
 
 .slider-status-off{ background: #000 }
+
+.imagenesAprender{
+	width: calc(33%);
+}

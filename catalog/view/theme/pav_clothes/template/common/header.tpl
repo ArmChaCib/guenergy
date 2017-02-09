@@ -201,7 +201,7 @@
                     <div class="image-nav-wrapper">
                         <ul class="nav-list">
                             <li>
-                                <a href="/nutrition-plan/activity/running/">
+                                <a href="index.php?route=information/nutritionplan">
                                     <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/nav-1.jpg');"></div>
                                     <h5 class="title">Running</h5>
                                 </a>
@@ -212,7 +212,7 @@
                     <div class="image-nav-wrapper">
                         <ul class="nav-list">
                             <li>
-                                <a href="/nutrition-plan/activity/cycling/">
+                                <a href="">
                                     <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/cycling-nav.jpg');"></div>
                                     <h5 class="title">Ciclismo</h5>
                                 </a>
@@ -269,7 +269,7 @@
               <div class="row">
                 <div class="image-nav">
 
-                    <div class="image-nav-wrapper">
+                    <div class="image-nav-wrapper" style="width: calc(33%)">
                         <ul class="nav-list">
                             <li>
                                 <a href="/about/">
@@ -280,10 +280,10 @@
                         </ul>
                     </div>
 
-                    <div class="image-nav-wrapper">
+                    <div class="image-nav-wrapper" style="width: calc(33%)" >
                         <ul class="nav-list">
                             <li>
-                                <a href="/category/product-deep-dive/">
+                                <a href="index.php?route=information/deepdive">
                                     <div class="img-wrap" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/product-insights-nav.jpg');"></div>
                                     <h5 class="title">PRODUCT DEEP DIVE</h5>
                                 </a>
@@ -291,7 +291,7 @@
                         </ul>
                     </div>
 
-                    <div class="image-nav-wrapper">
+                    <div class="image-nav-wrapper" style="width: calc(33%)">
                         <ul class="nav-list">
                             <li>
                                 <a href="/category/athlete-stories/">
