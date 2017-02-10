@@ -13,8 +13,9 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 
-<script type='text/javascript' src='https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/js/vendor.min-289ae76e00.js?ver=4.7.1'></script>
+<script type='text/javascript' src='https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/js/vendor.min-978aa484b8.js?ver=4.7.2 '></script>
 
+<script type='text/javascript' src='/catalog/view/theme/pav_clothes/javascript/jqueryScripts.js '></script>
 
   
 
@@ -35,7 +36,7 @@
 
   
 
-  <div class="body"> 
+<div class="body"> 
 
 <header id="header" role="header">
       
