@@ -86,7 +86,7 @@
             </li>
 
             <li >
-              <a  href="/distribuidores" data-target="shop-drop">
+              <a  href="index.php?route=information/distribuidores" data-target="shop-drop">
                 DISTRIBUIDORES
               </a>
             </li>
