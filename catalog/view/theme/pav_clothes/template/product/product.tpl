@@ -31,6 +31,10 @@
 
  
   <script src="//cdn.shopify.com/s/assets/themes_support/api.jquery-b90ee9a5604bc68b2f4a3af86b4551207834575e264152eac4822d0b60e0c0d5.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 </head>
 
@@ -64,7 +68,6 @@
                    <div class="product-label-special label"><?php echo $this->language->get( 'text_sale' ); ?>
                   
                   </div>
-
                 <?php } ?>
 
                 <a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class="colorbox">
@@ -100,8 +103,8 @@
                      <?php } ?>
                    <?php } ?>
                  </div>
-                 <a class="carousel-control left" href="#image-additional" data-slide="prev"></a>
-                 <a class="carousel-control right" href="#image-additional" data-slide="next"></a>
+                 <!--<a class="carousel-control left" href="#image-additional" data-slide="prev"></a>
+                 <a class="carousel-control right" href="#image-additional" data-slide="next"></a>-->
                </div>
                  <script type="text/javascript">
                    $('#image-additional .item:first').addClass('active');
@@ -160,10 +163,97 @@
 
     </div>
 
+<div itemprop="description">
+  <?php if ($attribute_groups) { ?>
+    <?php if ($attribute_groups) { ?>
+      <?php foreach ($attribute_groups as $attribute_group) { ?>
+          <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
+            <p style="box-sizing: border-box; margin: 0px 0px 20px; color: rgb(120, 117, 133); font-family: &quot;Gotham A&quot;, &quot;Gotham B&quot;, sans-serif; font-size: 14px;"><?php echo $attribute['text']; ?></p>
+            
+           <?php } ?>
+         <?php } ?>
+       <?php } ?>
+  <?php } ?>
+
+
+</div>
+
+<hr />
+<div class="product-info ">
+  <div class="row ">
+    
+    
+    <div class="product-extra product-form">
+      <?php if ($options) { ?>
+        <?php foreach ($options as $option) { ?>
+          <?php if ($option['type'] == 'select') { ?>
+            <div id="option-<?php echo $option['product_option_id']; ?>">
+
+              <div class="product-form__item product-form__item--quantity">
+                <?php if ($option['required']) { ?>
+                  <span class="required">*</span>
+                <?php } ?>
+
+                <label>
+                  <?php echo $option['name']; ?>:
+                </label>
+
+                <select id="Quantity" name="option[<?php echo $option['product_option_id']; ?>]">
+                  <option value="">
+                    <?php echo $text_select; ?>  
+                  </option>
+
+                  <?php foreach ($option['option_value'] as $option_value) { ?>
+                    <option value="<?php echo $option_value['product_option_value_id']; ?>">
+                      <?php echo $option_value['name']; ?>
+                      <?php if ($option_value['price']) { ?>
+                        (<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
+                      <?php } ?>
+                    </option>
+                  <?php } ?>
+                </select>
+              </div>
+            </div>
+          <?php } ?>  
+        <?php } ?>
+            
+      <?php } ?>
+
+
+      <div class="product-form__item product-form__item--quantity">
+        <label for="Quantity">
+          Quantity
+        </label> 
+        <input class="product-form__input" id="Quantity" min="1" name="quantity" type="number" value="1" />
+      </div>
+
+      <div id ="insertarInformacion">
+        <?php if ($minimum > 1) { ?>
+          <div class="minimum"><?php echo $text_minimum; ?></div>
+        <?php } ?>
+
+        <div class="product-form__item product-form__item--submit">
+          <input type="hidden" name="product_id" value="<?php echo $product_id; ?>"/>
+          &nbsp;
+
+          <span class="cart">
+            <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="btn btn--full product-form__cart-submit" data-toggle="modal" data-target="#keepBuying"/>
+          </span>
+        </div>
+      </div>       
+    </div>
+
+  </div>
+</div>
+
+
+<hr /><!-- parte estàtica -->
 <?php echo $description; ?> 
 
-    
-
+    </div>
+  </div>
+  </div>
+  
 
     </div>
 
@@ -204,6 +294,27 @@
   </script>
 
 
+<div class="modal fade" id="keepBuying" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Elemento agregado al carrito</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir comprando</button>
+          <a href="index.php?route=checkout/cart"><button type="button" class="btn btn-primary">Ver el carrito</button></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    </div>
 </body>
 
 
@@ -241,7 +352,6 @@ $(document).ready(function() {
 });
 //--></script> 
  <script type="text/javascript"><!--
-
 $('select[name="profile_id"], input[name="quantity"]').change(function(){
     $.ajax({
     url: 'index.php?route=product/product/getRecurringDescription',
@@ -341,9 +451,7 @@ $('#review .pagination a').live('click', function() {
   
   return false;
 });     
-
 $('#review').load('index.php?route=product/product/review&product_id=<?php echo $product_id; ?>');
-
 $('#button-review').bind('click', function() {
   $.ajax({
     url: 'index.php?route=product/product/write&product_id=<?php echo $product_id; ?>',
@@ -385,7 +493,6 @@ $(document).ready(function() {
   if ($.browser.msie && $.browser.version == 6) {
     $('.date, .datetime, .time').bgIframe();
   }
-
   $('.date').datepicker({dateFormat: 'yy-mm-dd'});
   $('.datetime').datetimepicker({
     dateFormat: 'yy-mm-dd',

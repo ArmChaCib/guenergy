@@ -13307,3 +13307,6 @@ body.no-touch .wafel-prod .prod-wrap:hover {
     visibility: hidden;
 }
 }
+
+#scrolltable { margin-top: 20px; height: 200px; overflow: auto; }
+#scrolltable th div { position: absolute; margin-top: -20px; }

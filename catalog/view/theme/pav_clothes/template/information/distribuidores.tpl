@@ -10,6 +10,8 @@
 	#map {
 		height: 100%;
 	}
+
+
 </style>
 
 <div class="pagehero">
@@ -19,13 +21,13 @@
 
 	<div class="copy">
 		<h1 itemprop="headline" class="entry-title">
-			SUCURSALES
+			DISTRIBUIDORES
 		</h1>
 		
 		<p itemprop="sub-title" class="sub-title">
 
 			<span style="font-weight: 400;"> 
-				CONOCE LA TIENDA MÁS CERCA DE TÍ
+				CONOCE EL DISTRIBUIDOR MÁS CERCANO A TI
 			</span>
 		</p>
 
@@ -49,15 +51,16 @@
     <br>
 
     
-    <div class="col-sm-4">
-    	<table class="table table-bordered">
+    <div class="col-sm-3" style="overflow:scroll;
+     height:100%;">
+    	<table class="table table-bordered" border="1">
     		<tbody id="distribuidores_table">
     			
     		</tbody>
     	</table>
     </div>
 
-    <div id="map" class="col-sm-8">
+    <div id="map" class="col-sm-9">
     	
     </div>
     
@@ -73,14 +76,18 @@
 
 	var sucursales =
 	[
-		{"Nombre":"Guadalajara", "Direccion": "Patria", "Telefono": 324234, "Website": "patria@asjdfkl", "Latitud":20.653995,"Longitud":-103.366288},
-		{"Nombre":"Monterrey", "Direccion": "Cruz del sur", "Telefono": 123434, "Website": "cruz@asjdfkl", "Latitud":25.686141,"Longitud":-100.316802},
+		{"Nombre":"Gu Energy Guadalajara", "Direccion": "Patria", "Telefono": "324234", "Website": "patria@asjdfkl", "Latitud":20.653995,"Longitud":-103.366288,"Linea":"Si"},
+		{"Nombre":"Gu Energy Monterrey", "Direccion": "Cruz del sur", "Telefono": "123434", "Website": "cruz@asjdfkl", "Latitud":25.686141,"Longitud":-100.316802,"Linea":"No"},
+		{"Nombre":"Gu Energy Guadalajara", "Direccion": "Patria", "Telefono": "324234", "Website": "patria@asjdfkl", "Latitud":20.653995,"Longitud":-103.366288,"Linea":"Si"},
+		{"Nombre":"Gu Energy Guadalajara", "Direccion": "Patria", "Telefono": "324234", "Website": "patria@asjdfkl", "Latitud":20.653995,"Longitud":-103.366288,"Linea":"Si"},
+		{"Nombre":"Gu Energy Guadalajara", "Direccion": "Patria", "Telefono": "324234", "Website": "patria@asjdfkl", "Latitud":20.653995,"Longitud":-103.366288,"Linea":"Si"},
 		
 	];
 
 	var map = null;
 
 	function initMap() {
+	  //navigator.geolocation.getCurrentPosition(getUserPosition, gestionarErrores); 
 	  var myLatLng = {lat: 20.653995, lng:  -103.366288};
 
 	  map = new google.maps.Map(document.getElementById('map'), {
@@ -96,8 +103,30 @@
 		    title: 'Gu Energy sucursal ' + sucursales[i]['Nombre'],
 		  });
 
-		   document.getElementById("distribuidores_table").innerHTML += "<tr><td>" + "<h3 onclick='cambiarMapa("+sucursales[i]['Latitud']+","+sucursales[i]['Longitud']+""+")'>"+sucursales[i]['Nombre']+"</h3>" +"<h6>"+sucursales[i]['Direccion']+"</h6>" +"<h6>"+sucursales[i]['Telefono']+"</h6>" +"<h6>"+sucursales[i]['Website']+"</h6></tr></td>"; 
+		  var $tr = $('<tr><td><h6></h6><hr><h7></h7><br><h7></h7><br><h7></h7><br><h7></h7><br></td></tr>');
+		  $tr.attr('id',i);
+		  $tr.find('h6').text(sucursales[i]['Nombre']);
+		  $tr.find('h7').eq(0).text(sucursales[i]['Direccion']);
+		  $tr.find('h7').eq(1).text(sucursales[i]['Telefono']);
+		  $tr.find('h7').eq(2).text(sucursales[i]['Website']);
+		  $tr.find('h7').eq(3).text(sucursales[i]['Linea']);
+		
+		  var lat = sucursales[i]['Latitud'];
+		  var long = sucursales[i]['Longitud'];
+		  var nombre = sucursales[i]['Nombre'];
+		  var dir = sucursales[i]['Direccion'];
+		  var tel = sucursales[i]['Telefono'];
+		  var web = sucursales[i]['Website'];
+		  var linea = sucursales[i]['Linea'];
+		  
+
+		  $('#distribuidores_table').append($tr);
+		   
 	  }
+	  $('#distribuidores_table tr').on('click',function(){
+	  	var indice = $(this).attr('id');
+	  	cambiarMapa(indice);
+	  });
 
 
 	  var geocoder = new google.maps.Geocoder();
@@ -107,7 +136,15 @@
 	  });
 
 	}
-
+ 	
+ 	function getUserPosition(posicion){
+		myLatLng = {lat: posicion.coords.latitude, lng:  posicion.coords.longitude};
+	}
+		 
+	function gestionarErrores(error){
+		alert('Error: '+error.code+' '+error.message+ '\n\nPor favor compruebe que está conectado '+
+		'a internet y habilite la opción permitir compartir ubicación física');
+	}
 
 	function geocodeAddress(geocoder, resultsMap) {
 	  	var address = document.getElementById('address').value;
@@ -128,9 +165,9 @@
 
 	
 
-	function cambiarMapa(lat,lng)
+	function cambiarMapa(indice)
 	{
-		var myLatLng = {lat: lat, lng: lng};
+		var myLatLng = {lat: sucursales[indice]['Latitud'], lng: sucursales[indice]['Longitud']};
 
 		map.setCenter(myLatLng);
 		map.setZoom(15);
@@ -138,9 +175,12 @@
 	 	var contentString = '<div id="content">'+
      	'<div id="siteNotice">'+
       	'</div>'+
-      	'<h1 id="firstHeading" class="firstHeading">GUENERY</h1>'+
+      	'<h6 id="firstHeading" class="firstHeading">'+sucursales[indice]['Nombre']+'</h6><hr>'+
       	'<div id="bodyContent">'+
-      	
+      	'<h7>'+sucursales[indice]['Direccion']+'</h7><br>'+
+      	'<h7>'+sucursales[indice]['Telefono']+'</h7><br>'+
+      	'<h7>'+sucursales[indice]['Website']+'</h7><br>'+
+      	'<h7>'+sucursales[indice]['Linea']+'</h7><br>'+
       	'</div>'+
       	'</div>';
 
