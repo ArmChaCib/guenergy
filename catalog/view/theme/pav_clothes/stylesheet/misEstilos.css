@@ -13310,3 +13310,71 @@ body.no-touch .wafel-prod .prod-wrap:hover {
 
 #scrolltable { margin-top: 20px; height: 200px; overflow: auto; }
 #scrolltable th div { position: absolute; margin-top: -20px; }
+
+.paddingCart
+{
+    padding: 250px 0;
+}
+
+.tamLinea
+{
+    width: 90%;
+}
+
+.paddingCartTittle
+{
+    padding: 60px 0;
+}
+
+.cart-header
+{
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.btn--secondary
+{
+    float: right;
+    margin-top: 15px;
+    box-sizing: border-box;
+    line-height: 1.375;
+    background-color: #f2f2f2;
+    color: #5b5c5c;
+    width: 250px;
+}
+
+
+.imagenCart
+{
+    padding-left: 100px;
+}
+
+.cart__taxes
+{
+    max-width: 600px;
+    float: right;
+}
+
+.cart__quantity
+{
+    width: 50px;
+}
+
+.ditribuidorTittle
+{
+    font-weight: 400;
+}
+
+.scrollTable{
+     overflow: scroll;
+     height: 100%;
+}
+
+.fondoDistribuidor
+{
+    background-image: 
+    url(
+        'https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/default-hero.jpg'
+    );
+}

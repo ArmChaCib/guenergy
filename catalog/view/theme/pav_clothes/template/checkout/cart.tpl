@@ -14,16 +14,16 @@
 <?php } ?>
  <?php require( DIR_TEMPLATE.$this->config->get('config_template')."/template/common/breadcrumb.tpl" );  ?>  
  
-<div id="content" style="padding: 80px 0;">
+<div id="content" class="paddingCartTittle" >
 
-  <div class="cart-header" style="float:left; margin-top : 15px; width : 100%;">
+  <div class="cart-header" >
 
     <a href="<?php echo $continue; ?>">
-      <span class="btn btn--secondary" style="float:right;"> 
-        <?php echo $button_shopping; ?> 
+      <span class="btn btn--secondary" > 
+        Seguir comprando
       </span>
     </a>
-      <h1 class="small--text-center" style="float:left;">Carrito de compras</h1>
+      <h1 class="small--text-center">Carrito de compras</h1>
 
     <div class="clear"></div>
   </div>
@@ -32,32 +32,6 @@
   <div >
   
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-    <style type="text/css">
-      .note{
-        padding: 6px 12px 6px 40px;
-        text-align: center;
-        margin-bottom : 20px;
-        text-align : center;
-      }
-      .retail-promo-text{
-        padding: 12px ;
-        display: none;
-        background-color: #00c4da;
-        border-color: #058593;
-        font-size: 1.1rem;
-        color: #fff;
-        text-transform : uppercase;
-      }
-      .retail-promo-text a {
-        color: #fff;
-        text-decoration: underline;
-      }
-      .added-modal .retail-promo-text{
-        margin: 20px 0px;
-        padding: 15px;
-      }
-    </style>
-
 
     <div class="cart-info">
       <table class="table table-hover">
@@ -65,8 +39,8 @@
         <tbody>
           <?php foreach ($products as $product) { ?>
             <tr>
-              <td class="col-md-2" style="padding-left: 100px;">
-                <a href="<?php echo $product['href']; ?>" class="cart__image">
+              <td class="col-md-2 " >
+                <a href="<?php echo $product['href']; ?>" class="imagenCart">
                   <img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>">
                 </a>
               </td>
@@ -85,7 +59,7 @@
                   
                 </label>
 
-                <input type="number" name="quantity[<?php echo $product['key']; ?>]" id="Updates_12137376449" class="cart__quantity" value="<?php echo $product['quantity']; ?>" min="0" data-line="1" style="width: 50px">
+                <input type="number" name="quantity[<?php echo $product['key']; ?>]" id="Updates_12137376449" class="cart__quantity" value="<?php echo $product['quantity']; ?>" min="0" data-line="1" >
               </td>
 
               <td class="col-md-2">
@@ -107,6 +81,7 @@
           
         </tbody>
       </table>
+      <hr>
     </div>
   </form>
 
@@ -120,10 +95,10 @@
       
       <?php } ?>
       
-      <p class="cart__taxes">Shipping &amp; taxes calculated at checkout</p>
+      <p class="">Shipping &amp; taxes calculated at checkout</p>
 
 
-      <p class="cart__taxes" style="max-width : 600px; float: right;"><strong>Estimated Shipping Date : <?php echo strftime("%b/%d/%Y"); ?><span id="js-ship-date"></span></strong><br />All orders require 48 hours for processing. <br /> Transit times are determined by shipping method. If your order is time sensitive, please contact our Customer Service team at (1-800-400-1995, option 4)</p>
+      <p class="cart__taxes" ><strong>Fecha estimada de entrega : <?php echo strftime("%b/%d/%Y"); ?><span id="js-ship-date"></span></strong><br />All orders require 48 hours for processing. <br /> Transit times are determined by shipping method. If your order is time sensitive, please contact our Customer Service team at (1-800-400-1995, option 4)</p>
       <div class="clear"></div>
       
       <a href="<?php echo $checkout; ?>">

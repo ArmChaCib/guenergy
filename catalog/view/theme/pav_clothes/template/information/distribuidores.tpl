@@ -15,7 +15,7 @@
 </style>
 
 <div class="pagehero">
-	<div class="hero-bg js-doc-nav-wrapper" style="background-image: url('https://1iy0q03l0o0o497fr42dtsex-wpengine.netdna-ssl.com/wp-content/themes/guenergy-17/public/images/default-hero.jpg')">
+	<div class="hero-bg fondoDistribuidor" >
 		
 	</div>
 
@@ -26,7 +26,7 @@
 		
 		<p itemprop="sub-title" class="sub-title">
 
-			<span style="font-weight: 400;"> 
+			<span class="ditribuidorTittle" > 
 				CONOCE EL DISTRIBUIDOR MÁS CERCANO A TI
 			</span>
 		</p>
@@ -51,8 +51,7 @@
     <br>
 
     
-    <div class="col-sm-3" style="overflow:scroll;
-     height:100%;">
+    <div class="col-sm-3 scrollTable" >
     	<table class="table table-bordered" border="1">
     		<tbody id="distribuidores_table">
     			
@@ -87,7 +86,6 @@
 	var map = null;
 
 	function initMap() {
-	  //navigator.geolocation.getCurrentPosition(getUserPosition, gestionarErrores); 
 	  var myLatLng = {lat: 20.653995, lng:  -103.366288};
 
 	  map = new google.maps.Map(document.getElementById('map'), {
@@ -97,11 +95,7 @@
 
 	  for(var i = 0; i<sucursales.length;i++)
 	  {
-		  var marker = new google.maps.Marker({
-		    position: {lat: sucursales[i]['Latitud'], lng:  sucursales[i]['Longitud']},
-		    map: map,
-		    title: 'Gu Energy sucursal ' + sucursales[i]['Nombre'],
-		  });
+		  cambiarMapa(i);
 
 		  var $tr = $('<tr><td><h6></h6><hr><h7></h7><br><h7></h7><br><h7></h7><br><h7></h7><br></td></tr>');
 		  $tr.attr('id',i);
@@ -128,6 +122,8 @@
 	  	cambiarMapa(indice);
 	  });
 
+	  navigator.geolocation.getCurrentPosition(getUserPosition, gestionarErrores); 
+
 
 	  var geocoder = new google.maps.Geocoder();
 
@@ -139,6 +135,32 @@
  	
  	function getUserPosition(posicion){
 		myLatLng = {lat: posicion.coords.latitude, lng:  posicion.coords.longitude};
+		map.setCenter(myLatLng);
+		map.setZoom(15);
+
+		var contentString = '<div id="content">'+
+     	'<div id="siteNotice"><h7>Aquí te encuentras</h7>'+
+      	'</div>'+
+      	
+      	'</div>';
+
+ 		var infowindow = new google.maps.InfoWindow({
+    		content: contentString
+  		});
+
+	 	var marker = new google.maps.Marker({
+	    	position: myLatLng,
+	    	icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
+	    	map: map,
+	    	title:'Gu Energy sucursal ' ,
+
+	  	});
+
+	  	marker.addListener('click', function() {
+    		infowindow.open(map, marker);
+ 		});
+
+	 	
 	}
 		 
 	function gestionarErrores(error){
