@@ -301,10 +301,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Elemento agregado al carrito</h4>
+          <h6 class="modal-title">Elemento agregado al carrito</h6>
         </div>
         <div class="modal-body">
-          <p>Some text in the modal.</p>
+          <p>Se agregó el producto <?php echo $heading_title; ?> al carrito</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir comprando</button>
